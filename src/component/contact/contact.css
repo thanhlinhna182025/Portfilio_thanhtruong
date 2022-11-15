@@ -1,0 +1,88 @@
+.contact {
+    display: flex;
+    margin-top: 50px;
+}
+.ct-left {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ct-left > span:nth-of-type(1) {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.ct-left > span:nth-of-type(2) {
+    color: var(--gray);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.ct-right {
+    flex: 8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ct-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    width: 70%;
+    padding: 0px 50px;
+    align-items: center;
+}
+.ct-form > input {
+    width: 80%;
+    padding: 5px 10px;
+    border: 1px solid var(--orange);
+    border-radius: 4px;
+    outline: none;
+}
+.ct-form > textarea {
+    width: 80%;
+    padding: 5px 10px;
+    border: 1px solid var(--orange);
+    border-radius: 4px;
+    outline: none;
+    min-height: 4rem;
+    resize: none;
+    min-height: 10rem;
+}
+
+.ct-button {
+    width: 12rem;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+    .ct-form > input {
+        width: 100%;
+    }
+    .ct-form > textarea {
+        width: 100%;
+    }
+    .contact {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .ct-form {
+        width: 100%;
+    }
+    .ct-form > input {
+        width: 100%;
+    }
+    .ct-form > textarea {
+        width: 100%;
+    }
+    .contact {
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 576px) {
+    .ct-form > textarea {
+        min-height: 8rem;
+    }
+}

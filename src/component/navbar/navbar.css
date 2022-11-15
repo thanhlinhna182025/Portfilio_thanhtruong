@@ -1,0 +1,42 @@
+.n-wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.n-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
+}
+.n-name {
+    font-size: 1.3rem;
+}
+.n-right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.n-list {
+    flex: 10;
+}
+.n-list > ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+.n-list > ul > a > li:hover {
+    cursor: pointer;
+    color: var(--yellow);
+}
+
+@media (max-width: 767px) {
+    .n-wrapper {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,135 @@
+.intro {
+    display: flex;
+}
+.i-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    gap: 10px;
+}
+.i-name {
+    display: flex;
+    flex-direction: column;
+}
+.i-name > :nth-child(1) {
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 500;
+}
+.i-name > :nth-child(2) {
+    color: var(--orange);
+    font-size: 3rem;
+    font-weight: 600;
+}
+.i-name > :nth-child(3) {
+    color: var(--gray);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.i-button {
+    width: 12rem;
+    height: 2rem;
+}
+.i-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 0;
+}
+.i-icons > * {
+    transform: scale(0.5);
+}
+.i-icons > *:hover {
+    cursor: pointer;
+}
+.i-right {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+.i-right > * {
+    position: absolute;
+    z-index: 1;
+}
+.i-right > :nth-child(1) {
+    left: -15%;
+    top: -10%;
+}
+.i-right > :nth-child(2) {
+    left: -20%;
+    top: -10%;
+    transform: scale(0.9);
+}
+.i-right > :nth-child(3) {
+    left: -25%;
+    top: -10%;
+}
+@media (max-width: 1200px) {
+    .i-right > :nth-child(1) {
+        transform: scale(0.9);
+    }
+    .i-right > :nth-child(2) {
+        left: -30%;
+    }
+    .i-right > :nth-child(3) {
+        transform: scale(0.7);
+    }
+}
+@media (max-width: 991px) {
+    .i-icons {
+        margin-top: 0rem;
+    }
+    .i-right > :nth-child(1) {
+        transform: scale(0.6);
+        top: -15%;
+        left: -25%;
+    }
+    .i-right > :nth-child(2) {
+        left: -50%;
+        transform: scale(0.5);
+        top: -20%;
+    }
+    .i-right > :nth-child(3) {
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        flex-direction: column;
+        margin-bottom: 22rem;
+    }
+    .i-right > :nth-child(1) {
+        transform: scale(0.6);
+        top: -2rem;
+        left: 8rem;
+    }
+    .i-right > :nth-child(2) {
+        left: -9rem;
+        transform: scale(0.5);
+        top: -5rem;
+    }
+    .i-right > :nth-child(3) {
+        transform: scale(0.6);
+        top: -5rem;
+        left: 0;
+    }
+}
+@media (max-width: 576px) {
+    .i-right > :nth-child(1) {
+        transform: scale(0.5);
+        top: -2rem;
+        left: 1rem;
+    }
+    .i-right > :nth-child(2) {
+        left: -12rem;
+        transform: scale(0.4);
+        top: -5rem;
+    }
+    .i-right > :nth-child(3) {
+        transform: scale(0.4);
+        top: -4rem;
+        left: -5rem;
+    }
+}

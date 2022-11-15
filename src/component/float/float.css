@@ -1,0 +1,19 @@
+.float {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+.float > span {
+  font-size: 2rem;
+  color: var(--blueCard);
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+}

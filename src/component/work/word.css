@@ -1,0 +1,97 @@
+:root {
+    --MainCirle: 300px;
+    --SecCirle: 100px;
+}
+.w-button {
+    width: 12rem;
+}
+.work {
+    display: flex;
+    padding: 5rem;
+}
+.w-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.w-mainCirle {
+    width: var(--MainCirle);
+    height: var(--MainCirle);
+    border-radius: 100%;
+    position: relative;
+    box-shadow: var(--smboxShadow);
+    background-color: white;
+    margin-left: 4rem;
+    z-index: -1;
+}
+.w-mainCirle > * {
+    position: absolute;
+}
+.w-secCirle {
+    width: var(--SecCirle);
+    height: var(--SecCirle);
+    border-radius: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--boxShadow);
+}
+.w-secCirle:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(to left bottom, #c6ffdd, #fbd786, #f7797d);
+    border-radius: 100%;
+    z-index: -1;
+}
+.w-secCirle > img {
+    transform: scale(0.6);
+}
+.w-mainCirle > :nth-child(1) {
+    top: -55px;
+    left: 105px;
+}
+.w-mainCirle > :nth-child(2) {
+    top: 105px;
+    right: -55px;
+}
+.w-mainCirle > :nth-child(3) {
+    bottom: -50px;
+    left: 105px;
+}
+.w-mainCirle > :nth-child(4) {
+    top: 105px;
+    left: -55px;
+}
+.circleBg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+}
+.circleBlue {
+    background-color: blue;
+    top: -25px;
+    right: -50px;
+    z-index: -2;
+}
+.circleYellow {
+    background-color: yellow;
+    top: 130px;
+    right: -75px;
+    z-index: -2;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+@media (max-width: 576px) {
+}
